@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppareilComponent } from './appareil/appareil.component';
 
 @Component({
   selector: 'app-root',
@@ -9,12 +10,24 @@ import { Component } from '@angular/core';
 export class AppComponent {
   isAuth = false;
 
-  appareilOne = 'Machine à laver';
-  appareilTwo = 'Télévision';
-  appareilThree = 'Enceintes';
-
-  appareilEteint = 'Eteint';
-  appareilAllume = 'Allumé';
+  appareils = [
+    {
+      name: 'Ampli',
+      status: 'allumé'
+    },
+    {
+      name: 'Ordinateur',
+      status: 'eteint'
+    },
+    {
+      name: 'Enceintes',
+      status: 'allumé'
+    },
+    {
+      name: 'ma bite',
+      status: 'eteint'
+    }
+  ];
 
 
   constructor() {

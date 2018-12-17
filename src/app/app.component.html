@@ -5,9 +5,7 @@
     <div class="col-12">
       <h2>Mes appareils</h2>
         <ul class="list-group">
-          <app-appareil [appareilName]="appareilOne" [appareilStatus]="appareilAllume"></app-appareil>
-          <app-appareil [appareilName]="appareilTwo" [appareilStatus]="appareilEteint"></app-appareil>
-          <app-appareil [appareilName]="appareilThree" [appareilStatus]="appareilAllume"></app-appareil>
+          <app-appareil *ngFor="let appareil of appareils" [appareilName]="appareil.name" [appareilStatus]="appareil.status"></app-appareil>
         </ul>
         <button class="btn btn-success" 
                 [disabled]="isAuth" 
