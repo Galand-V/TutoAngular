@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <h2>Mes appareils</h2>
+        <ul class="list-group">
+          <app-appareil [appareilName]="appareilOne" [appareilStatus]="appareilAllume"></app-appareil>
+          <app-appareil [appareilName]="appareilTwo" [appareilStatus]="appareilEteint"></app-appareil>
+          <app-appareil [appareilName]="appareilThree" [appareilStatus]="appareilAllume"></app-appareil>
+        </ul>
+        <button class="btn btn-success" 
+                [disabled]="isAuth" 
+                (click)="onAllumer()">Tout allumer</button>
+    </div>
+  </div>
+</div>
