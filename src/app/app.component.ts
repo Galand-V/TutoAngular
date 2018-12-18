@@ -10,6 +10,8 @@ import { AppareilComponent } from './appareil/appareil.component';
 export class AppComponent {
   isAuth = false;
 
+  lastUpdate = new Date();
+
   appareils = [
     {
       name: 'Ampli',
@@ -28,7 +30,6 @@ export class AppComponent {
       status: 'eteint'
     }
   ];
-
 
   constructor() {
     setTimeout(
