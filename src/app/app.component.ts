@@ -24,7 +24,7 @@ export class AppComponent {
       status: 'allumé'
     },
     {
-      name: 'ma bite',
+      name: 'Machine',
       status: 'eteint'
     }
   ];
