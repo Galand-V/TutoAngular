@@ -5,7 +5,8 @@
     <app-appareil  *ngFor="let appareil of appareils; let i = index"
                   [indexOfAppareil]="i"
                   [appareilName]="appareil.name"
-                  [appareilStatus]="appareil.status"></app-appareil>
+                  [appareilStatus]="appareil.status"
+                  [appareilId]="appareil.id"></app-appareil>
   </ul>
   <button class="btn btn-success col-md-12" (click)="onAllumer()">Tout allumer</button>
   <button class="btn btn-danger col-xl-12" (click)='onEteindre()'>Tout éteindre</button>
